@@ -22,7 +22,7 @@ const NavbarTwoColumns = (props: INavbarProps) => (
     </nav>
 
     <div className="shrink-0">
-      <Button base>{props.ctaText}</Button>
+      <Button>{props.ctaText}</Button>
     </div>
   </div>
 );
