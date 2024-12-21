@@ -5,7 +5,7 @@ type ISectionProps = {
   description?: string;
   yPadding?: string;
   xPadding?: string;
-  zIndex?: number;
+  zIndex?: string;
   children: ReactNode;
 };
 
