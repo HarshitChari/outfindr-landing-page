@@ -1,15 +1,10 @@
 import { Player } from '@lottiefiles/react-lottie-player';
-import dynamic from 'next/dynamic';
+import Spline from '@splinetool/react-spline/next';
 
 import { Section } from '@/layout/Section';
 
 // Dynamically import Spline to prevent SSR issues
-const Spline = dynamic(
-  () => import('@splinetool/react-spline').then((mod) => mod.default),
-  {
-    ssr: false,
-  },
-);
+
 const Sponsors = () => {
   return (
     <Section xPadding="px-0" yPadding="py-50" zIndex="z-0">
