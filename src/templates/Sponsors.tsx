@@ -1,5 +1,5 @@
 import { Player } from '@lottiefiles/react-lottie-player';
-import Spline from '@splinetool/react-spline/next';
+import Spline from '@splinetool/react-spline';
 
 import { Section } from '@/layout/Section';
 
