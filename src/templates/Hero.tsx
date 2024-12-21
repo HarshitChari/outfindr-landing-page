@@ -32,18 +32,7 @@ const Hero = () => (
           </>
         }
         description="We Have a Plan for you Today 🥰"
-        button={
-          <Button
-            xl
-            onClick={(e) => {
-              e.preventDefault();
-              const section = document.querySelector('#business-section');
-              section?.scrollIntoView({ behavior: 'smooth' });
-            }}
-          >
-            Apply for OutFindr Business
-          </Button>
-        }
+        button={<Button xl>Apply for OutFindr Business</Button>}
       />
     </Section>
   </Background>
