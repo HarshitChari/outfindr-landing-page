@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+@media (max-width: 767px) {
+  body::before {
+    content: '';
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff; /* or any color */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+  }
+}
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+  margin: 0;
+}
+
+@font-face {
+  font-family: 'Roundo-Bold';
+  src: url('/assets/fonts/Roundo-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roundo-SemiBold';
+  src: url('/assets/fonts/Roundo-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Satoshi-Regular';
+  src: url('/assets/fonts/Satoshi-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background: linear-gradient(90deg, #E7EEFF 0%, #F5F1FD 50%, #FEF9F1 86%);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
